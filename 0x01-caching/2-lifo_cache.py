@@ -4,6 +4,9 @@
 from base_caching import BaseCaching
 
 class LIFOCache(BaseCaching):
+    '''
+    ama
+    '''
     def put(self, key, item):
         """ Add an item in the cache
         """
