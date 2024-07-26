@@ -18,11 +18,3 @@ class FIFOCache(BaseCaching):
                 self.cache_data.pop(first_key)
                 self.cache_data[key] = item
                 print('DISCARD: {}'.format(first_key))
-
-
-    def get(self, key):
-        """ Get an item by key
-        """
-        if key:
-            return self.cache_data.get(key)
-        return None
